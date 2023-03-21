@@ -1,0 +1,59 @@
+<!--
+
+<div class="container-fluid loginDiv ">
+  <div class="text-center">
+    <b class="fs-3 mb-3">Login</b>
+  </div>
+  <form action="" [formGroup]="loginForm" (ngSubmit)="userLogin()">
+    <label for="userName"> <b>User Name</b> </label>
+    <input type="text" class="form-control w-100" formControlName="userName">
+    <p *ngIf="loginForm.get('userName')?.touched && loginForm.get('userName')?.invalid" class="text-danger"> Enter Valid
+      user name </p>
+    <label for="Password" class="mt-2"> <b>User Password</b> </label>
+    <input type="password" class="form-control w-100" formControlName="password">
+    <p *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="text-danger"> Enter Valid
+      user name </p>
+
+    <div class="mt-4 mb-1">
+      <button class="btn btn-success" type="submit">Submit</button>
+      <span></span>
+      <button class="btn btn-danger ms-5" type="reset">Reset</button>
+    </div>
+    <div class="mb-4 mt-2">
+      <a href="#" routerLink="/auth/register" routerLinkActive="routerActive"> Register Now</a>
+      <a href="#" class="ms-4"> <small>Forgot Password</small></a>
+    </div>
+  </form>
+
+</div> -->
+
+<div class=" card w-25">
+  <div class="text-center">
+    <span class="fs-3">Login</span>
+  </div>
+<form action="" [formGroup]="loginForm" (ngSubmit)="userLogin()">
+  <div class="ps-5 pe-5">
+  <label for="userName"> <b>User Name</b> </label>
+  <input type="text" class="form-control w-100" formControlName="userName">
+  <p *ngIf="loginForm.get('userName')?.touched && loginForm.get('userName')?.invalid" class="text-danger"> <b>Enter Valid
+    user name</b> </p>
+  <label for="Password" class="mt-2"> <b>User Password</b> </label>
+  <input type="password" class="form-control w-100" formControlName="password">
+  <p *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="text-danger"> <b>Enter Valid
+    user name</b> </p>
+  </div>
+    <div class="mt-4 mb-1 ms-5" >
+      <button class="btn btn-success" type="submit" [disabled]="loginForm.invalid" >Submit</button>
+      <button class="btn btn-danger ms-5" type="reset">Reset</button>
+    </div>
+    <div class="mb-4 mt-2 ms-5">
+      <a href="#" routerLink="/auth/register" routerLinkActive="routerActive"> Register Now</a>
+      <a href="#" class="ms-4"> <small>Forgot Password</small></a>
+    </div>
+</form>
+
+</div>
+
+
+
+

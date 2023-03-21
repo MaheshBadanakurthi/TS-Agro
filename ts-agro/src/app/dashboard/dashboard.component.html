@@ -1,0 +1,74 @@
+<div>
+  <div>
+
+    <div class="d-flex">
+      <div [ngClass]="{' small-sidebar': step === 1, ' large-sidebar' : step === 2 }" class="sidebar float-left">
+        <div class="sidebar-header">
+          <span class="d-flex align-items-center ml-2 " style="color:  #4b05fc;">
+            <img
+              src=" https://previews.123rf.com/images/twindesigner/twindesigner1911/twindesigner191100348/134181760-mb-letter-design-with-brush-stroke-and-modern-3d-look-vector-illustration.jpg  "
+              alt="" class="brandImg">
+          </span>
+          <i class="pi pi-times cursor-pointer site-name close-menu" style="font-size: 20px" (click)="step=1"></i>
+        </div>
+        <div class="sidebar-content">
+          <div class="list-wrapper">
+            <ul class="listbox-list">
+              <li class="listbox-item" (click)="step=2" *ngIf="step==1">
+                <i class="pi pi-bars site-name1 me-2" style="font-size: 20px"></i> <span> </span>
+              </li>
+              <li class="listbox-item" routerLink="/dashboard" routerLinkActive="routerActive">
+                <i class="pi pi-palette me-2"></i> <span class="ms-3"> Dashboard</span>
+              </li>
+              <li class="listbox-item" routerLink="/dashboard/cultivateLand" routerLinkActive="routerActive">
+                <i class="pi pi-angle-double-right me-2" style="font-size: 20px;color: black;"></i>
+                <span class="ms-2">Aggricultural Land</span>
+              </li>
+              <li class="listbox-item" routerLink="/dashboard/benz">
+                <i class="pi pi-angle-double-right me-2" style="font-size: 20px;color: rgb(8, 0, 255);"></i> <span class="ms-2"> Non Agro Land</span>
+              </li>
+              <li class="listbox-item" routerLink="/dashboard/bugatti">
+                <i class="pi pi-angle-double-right  me-2" style="font-size: 20px"></i> <span class="ms-2"> Forest</span>
+              </li>
+
+
+              <hr class="mt-4 mb-2">
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="content-inner overflow-hidden px-1">
+        <div class="row">
+        <div class="header float-left">
+
+            <div class="col-lg-6 col-md-6 p-3">
+              <div class="d-flex  ps-3" style="width: 100%;">
+                  <button type="button" class="menu-button" (click)="visibleSidebar = true"> <i
+                      class="pi pi-bars"></i></button>
+                  <input type="text" class="form-control w-50" placeholder=" Search here">
+
+                <div class="profile">
+                  <i class="pi pi-user cursor-pointer" style="font-size: 1.5rem" (click)="profile.toggle($event)"></i>
+                   <p-overlayPanel #profile [style]="{width:'100px', height:'auto'}">
+                    <ng-template pTemplate>
+                      <a><b>Profile</b></a> <br>
+                      <b class="text-primary cursor-pointer" (click)="logout()">Logout</b>
+                    </ng-template>
+                  </p-overlayPanel>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="content">
+
+          <router-outlet></router-outlet>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>

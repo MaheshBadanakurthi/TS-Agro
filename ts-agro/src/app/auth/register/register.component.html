@@ -1,0 +1,76 @@
+<!--
+
+<div class="container-fluid loginDiv ">
+  <div class="text-center">
+    <b class="fs-3 mb-3">Login</b>
+  </div>
+  <form action="" [formGroup]="loginForm" (ngSubmit)="userLogin()">
+    <label for="userName"> <b>User Name</b> </label>
+    <input type="text" class="form-control w-100" formControlName="userName">
+    <p *ngIf="loginForm.get('userName')?.touched && loginForm.get('userName')?.invalid" class="text-danger"> Enter Valid
+      user name </p>
+    <label for="Password" class="mt-2"> <b>User Password</b> </label>
+    <input type="password" class="form-control w-100" formControlName="password">
+    <p *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" class="text-danger"> Enter Valid
+      user name </p>
+
+    <div class="mt-4 mb-1">
+      <button class="btn btn-success" type="submit">Submit</button>
+      <span></span>
+      <button class="btn btn-danger ms-5" type="reset">Reset</button>
+    </div>
+    <div class="mb-4 mt-2">
+      <a href="#" routerLink="/auth/register" routerLinkActive="routerActive"> Register Now</a>
+      <a href="#" class="ms-4"> <small>Forgot Password</small></a>
+    </div>
+  </form>
+
+</div> -->
+
+<div class=" card w-25">
+  <div class="text-center">
+    <b class="fs-4">Register</b>
+  </div>
+<form action="" [formGroup]="register" (ngSubmit)="userRegister()">
+  <div class="ps-5 pe-5">
+  <label for="userName"> <b>User Name</b> </label>
+  <input type="text" class="form-control w-100" formControlName="userName">
+  <p *ngIf="register.get('userName')?.touched && register.get('userName')?.invalid" class="text-danger"> <b>Enter Valid
+    user name</b> </p>
+    <p *ngIf="register.get('userName')?.valid && register.get('userName')?.value.length<3" class="text-danger"> <b>User name aleast 3 chars </b> </p>
+
+    <label for="mobile"> <b>Mobile</b> </label>
+  <input type="number" class="form-control w-100" formControlName="mobile">
+  <p *ngIf="register.get('mobile')?.touched && register.get('mobile')?.invalid" class="text-danger"> <b>Enter Valid mobile number</b> </p>
+  <!-- <p *ngIf="register.get('mobile')?.dirty && register.get('mobile')?.value.length<10" class="text-danger"> <b>Mobile no. can not less than 10 digits </b> </p> -->
+  <!-- <p *ngIf="register.get('mobile')?.valid && register.get('mobile')?.value.length>10" class="text-danger"> <b>Mobile no. can not more than 10 digits </b> </p> -->
+
+  <label for="email"> <b>Email</b> </label>
+  <input type="email" class="form-control w-100" formControlName="email">
+  <p *ngIf="register.get('email')?.touched && register.get('email')?.invalid" class="text-danger"> <b>Enter Valid email</b> </p>
+
+
+  <label for="Password" class="mt-2"> <b>User Password</b> </label>
+  <input type="password" class="form-control w-100" formControlName="password">
+  <p *ngIf="register.get('password')?.touched && register.get('password')?.invalid" class="text-danger"> <b> Enter Password </b> </p>
+
+    <label for="confirmPass"> <b>ConfirmPassword</b> </label>
+  <input type="password" class="form-control w-100" formControlName="confirmPassword">
+  <!-- <p *ngIf=" register.get('password')?.value===register.get('confirmPassword')?.value"> Password not matched </p> -->
+  <!-- <p class="text-danger" *ngIf=" register.get("confirmPassword")?.touched && register.get('password')?.value === register.get('confirmPassword')?.value" >  <b> Password did not match. </b> </p> -->
+
+  </div>
+    <div class="mt-4 mb-1 ms-5" >
+      <button class="btn btn-success" type="submit" [disabled]="register.invalid">Register</button>
+      <button class="btn btn-danger ms-5" type="reset">Reset</button>
+    </div>
+    <div class="mb-4 mt-2 ms-5">
+      <a href="#" routerLink="/auth" routerLinkActive="routerActive">Go to Login</a>
+    </div>
+</form>
+
+</div>
+
+
+
+

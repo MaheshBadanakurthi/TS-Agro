@@ -1,0 +1,159 @@
+<div class="container-fluid">
+  <div>
+    <header class="bg-black mb-2">
+      <div class="d-flex">
+        <div>
+          <img
+            src="https://carswitch.com/newsroom/wp-content/uploads/2022/05/Meaning-and-History-of-the-Jaguar-Logo-1200-630.jpg"
+            alt="" style="height:50px; width: 150px;">
+        </div>
+        <div class="text-white p-2 mt-1 ms-2">
+          <b>HOME</b>
+        </div>
+        <div class="text-white p-2 mt-1 ms-2">
+          <b>BROWSE</b>
+        </div>
+        <div class="text-white p-2 mt-1 ms-2">
+          <b>SCHEMES</b>
+        </div>
+        <div class="text-white p-2 mt-1 ms-2">
+          <b>EXPLORE</b>
+        </div>
+      </div>
+
+    </header>
+  </div>
+  <div class="d-flex col-12 container-fluid">
+    <div class=" row col-6">
+      <img src="https://ecostat.telangana.gov.in/images/New-Map-33-Dist.png" alt="" height="450px" width="auto">
+    </div>
+    <div class="ms-3 col-3 " style="margin-top: 10%;">
+      <div class="card-header">
+        <b class="fs-4 ">TELANGANA </b>
+      </div>
+      <div class="ms-3 lh-lg mahesh mt-3">
+        <p>Capital City : <b> Hyderabad</b> </p>
+        <p>Area : <b> 1,12,077 Sq. Kms.</b> </p>
+        <p>Districts: <b> 33</b> </p>
+        <p>Households : <b> 103.04 Lakhs</b> </p>
+        <p>Population : <b> 403.04 Lakhs</b> </p>
+      </div>
+    </div>
+    <div class="col-4 card">
+      <div class="card-header">
+        Latest Notification
+      </div>
+      <div class="notifications">
+        <p>Notification-01 : </p>
+        <p>Notification-02 : </p>
+        <p>Notification-03 : </p>
+        <p>Notification-04 : </p>
+        <p>Notification-05 : </p>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="ms-3 me-3 fw-normal">
+    <p> Formed as the <b>29th</b> State of India, <a href="#"> <b>Telangana</b></a> came into being on the <b>2nd of
+        June, 2014</b>. The State has an area of <u> 1,12,077</u> sq. Km. and has a population of <u> 3,50,03,674</u>
+      (2011 Census). The Telangana region was part of the <b> <a href="#">Hyderabad</a> </b> state from 17th September
+      1948 to 1st November 1956, until it was merged with Andhra State to form Andhra Pradesh.</p>
+    <div>
+      <p-tabView>
+         <p-tabPanel header=" Climate ">
+          <p>Telangana has a
+            <a href="#"> <b>semi-arid</b> </a> to arid climate with hot summers and dry winters. The state receives most
+            of its rainfall during the monsoon season, which is from June to September. The average annual rainfall in
+            the state is around
+            <b>900</b> mm.
+          </p>
+          <div class=" text-center">
+            <b class="fs-3">Climate varies from season to season.</b>
+            <div class="d-flex justify-content-center">
+              <img
+                src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00704-020-03425-8/MediaObjects/704_2020_3425_Fig9_HTML.png"
+                alt="" height="450px" width="800" class="card shadow p-3">
+
+            </div>
+          </div>
+          <div class="col-10 ms-4 mt-5 text-center">
+            <b class="fs-3">Climate varies from Month to Month.</b>
+          <p-chart type="bar" [data]="climateChart" [options]="options" ></p-chart>
+          <b>Temparature on degrees</b>
+          </div>
+
+        </p-tabPanel>
+         <p-tabPanel header=" Soil " >
+          <p>The soils in Telangana are predominantly <b>red sandy</b> loams, <b>red</b> loams, and <b>clay</b> loams.
+            The state also has <b>black cotton soils</b> in some areas. The soils in Telangana are generally fertile,
+            but there are areas where the soil is saline and alkaline.</p>
+          <div class="col-12 d-flex">
+            <div class="ms-4 col-6">
+              <p-chart type="doughnut" [data]="soilData" [options]="soilOptions" [responsive]="false"></p-chart>
+            </div>
+            <div class="col-6 mt-5" *ngIf="soilObj">
+              <b>Rough information about SOIL percentage.</b>
+              <p> Red Soil : <b>{{soilObj.redSoil}} %  </b> </p>
+              <p> Clay Soil : <b>{{soilObj.clay}} %</b> </p>
+              <p> Black Cotton Soil : <b>{{soilObj.blackCotton}} %</b> </p>
+              <p> Red Sandy Soil : <b>{{soilObj.redSandy}} %</b> </p>
+            </div>
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header=" Crops ">
+          <p> <b>Rice, cotton, maize, jowar, bajra, red gram, green gram, black gram, and groundnut</b> are the major
+            crops grown in Telangana. Other important crops include <b>sugarcane, tobacco, chillies, turmeric, and
+              mango.</b>
+          </p>
+          <div class="text-center w-75 ms-4">
+            <b class="fs-3">Highest harvesting crops in TS</b>
+            <p-chart type="bar" [data]="cropsData"  > </p-chart>
+
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header=" Irrigation ">
+          <p> Telangana has a well-developed irrigation system with around 18 major, medium, and minor irrigation
+            projects. The state has a total of <b>14,394</b> tanks and ponds, which are the main source of irrigation
+            for agriculture in the state. </p>
+        </p-tabPanel>
+        <p-tabPanel header=" Research and development : ">
+          <p>The state has several agricultural research institutions, including the Professor <b><a href="#">
+                Jayashankar Telangana State Agricultural University </a> </b> and the National Academy of Agricultural
+            Research Management. These institutions conduct research and provide training to farmers to help improve
+            agricultural productivity in the state.</p>
+        </p-tabPanel>
+      </p-tabView>
+
+
+    </div>
+  </div>
+  <div>
+    <footer class="">
+      <div class="d-flex justify-content-center text-white pt-4 pb-4">
+        <i class="pi pi-facebook bg-success rounded" style="font-size: 1.5rem"></i>
+        <i class="pi pi-google ms-3 bg-success rounded " style="font-size: 1.5rem"></i>
+        <i class="pi pi-twitter ms-3 bg-success rounded" style="font-size: 1.5rem"></i>
+        <i class="pi pi-apple ms-3 bg-success rounded" style="font-size: 1.5rem"></i>
+      </div>
+      <div class="d-flex justify-content-center text-white ">
+        <p>HOME |</p>
+        <p class="ms-3">MENU |</p>
+        <p class="ms-3">STORY |</p>
+        <p class="ms-3">LOCATION </p>
+      </div>
+      <!-- <div class="d-flex justify-content-center text-white ">
+        <small >HOME |</small>
+        <small class="ms-3">MENU |</small>
+        <small class="ms-3">STORY |</small>
+        <small class="ms-3">LOCATION </small>
+      </div> -->
+      <div class="bg-success text-white text-center  fw-normal pt-2 pb-3">
+        <p>This is not an oficial website. Yet you will encounter the exact experiendce that original gives.
+        </p>
+        <small>Feel free to give suggtions.</small>
+      </div>
+    </footer>
+  </div>
+
+</div>

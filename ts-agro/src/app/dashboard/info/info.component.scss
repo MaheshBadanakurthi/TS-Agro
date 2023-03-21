@@ -1,0 +1,42 @@
+.jaguar {
+  height: 70vh;
+  width: 100%;
+}
+
+.text-white b:hover {
+  font-size: 1.25rem;
+  background-color: white;
+  color: black;
+  font-family: serif;
+  padding: 10px;
+  border-radius: 1px 12px 1px 12px;
+  cursor: pointer;
+}
+
+.notifications {
+  height: auto;
+  overflow: hidden;
+  padding: 30px;
+  animation: scroll-up 10s linear infinite;
+  position: relative;
+}
+.notification p {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+
+}
+
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(90%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+footer{
+  background-color: rgb(54, 53, 53);
+}

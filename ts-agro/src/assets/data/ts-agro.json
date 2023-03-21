@@ -1,0 +1,16 @@
+[
+  {
+    "forInfo":{
+      "soil":{"redSoil":20, "redSandy":15, "clay":25, "blackCotton":35 },
+      "climate": {  },
+      "crops": { "vari":45, "maize":25, "cotton":34, "pulses":30, "rest":21 },
+      "irrigation": { "groundWater":50, "canals":33, "wells":10},
+      "RD":{"govt":45, "private":50, "rest":5 }
+
+    }
+
+
+  }
+  ]
+
+
