@@ -1,16 +1,46 @@
 [
   {
-    "forInfo":{
-      "soil":{"redSoil":20, "redSandy":15, "clay":25, "blackCotton":35 },
-      "climate": {  },
-      "crops": { "vari":45, "maize":25, "cotton":34, "pulses":30, "rest":21 },
-      "irrigation": { "groundWater":50, "canals":33, "wells":10},
-      "RD":{"govt":45, "private":50, "rest":5 }
-
+    "forInfo": {
+      "soil": { "redSoil": 20, "redSandy": 15, "clay": 25, "blackCotton": 35 },
+      "climate": {},
+      "crops": {
+        "vari": 45,
+        "maize": 25,
+        "cotton": 34,
+        "pulses": 30,
+        "rest": 21
+      },
+      "irrigation": { "groundWater": 50, "canals": 33, "wells": 10 },
+      "RD": { "govt": 45, "private": 50, "rest": 5 }
     }
 
+  },
+  {
+    "cropProduction":[
+      { "district": "Siddipeta", "farmPer": 85, "rank":1, "majorCrops":" Paddy, Cotton,Wheat", "reason":" Due to various factors. Some of these factors are:   1. Irrigation facilities 2. Fertile soil: 3. Agriculture-friendly policies: 4. Technological advancements: "},
+      { "district": "Bhadradri Kothagudem", "farmPer": 68, "rank":2, "majorCrops":"Oil Palm, Paddy, kind of Sericulture", "reason":"Reason2"},
+      { "district": "Hyderabad", "farmPer": 67, "rank":3, "majorCrops":"Rice , Maize, Pulses, Peanuts, Cotton", "reason":"Reason3"},
+      { "district": "Jagtial", "farmPer": 66, "rank":4, "majorCrops":"Paddy, Maize, Cotton, Turmeric,Groundnut,Chilli", "reason":"Reason4"},
+      { "district": "Jangon", "farmPer": 63, "rank":5, "majorCrops":"Paddy, Maize, Red gram, Green gram, vegetables", "reason":"Reason5"},
+      { "district": "JayShankar Bhupalapally ", "farmPer": 62.34, "rank":6, "majorCrops":" Paddy, Cotton,Chilli, Turmeric", "reason":" "},
+      { "district": "Jogulamba Gadwal ", "farmPer": 62, "rank":7, "majorCrops":"Cotton", "reason":" "},
+      { "district": " Kamareddy", "farmPer": 61.45, "rank":8, "majorCrops":"Paddy, Sugarcane,Maize", "reason":" "},
+      { "district": "Karimnagar ", "farmPer": 61, "rank":9, "majorCrops":"Paddy, Maize,Cotton, Chilli,Mango,Tomato,Onion,Spices", "reason":" "},
+      { "district": " Khammam", "farmPer": 60.55, "rank":10, "majorCrops":"Paddy, Cotton, Maize,Pulses,Chilli", "reason":" "},
+      { "district": "KomuramBheem Asifabad ", "farmPer": 60, "rank":11, "majorCrops":"Cotton, Paddy, Red gram, Millet, Soyabean", "reason":" "},
+      { "district": " Mahabubabad", "farmPer": 59.22, "rank":12, "majorCrops":"Paddy, Maize,Cotton, Pulses,Chilli", "reason":" "},
+      { "district": "Mahabubnagar ", "farmPer": 59.12, "rank":13, "majorCrops":"Rice, Millet,Ragi,Peanut, Castor,Tobaco, Chilli", "reason":" "},
+      { "district": " Mancherial", "farmPer": 59, "rank":14, "majorCrops":"Rice, Red gram, Cotton, Vegetables", "reason":" "},
+      { "district": " Medak", "farmPer": 58.88, "rank":15, "majorCrops":" Cotton, Maize, Pulses,SugarCane, Millet", "reason":" "},
+      { "district": "Medchal", "farmPer": 58.76, "rank":16, "majorCrops":"Paddy, Maize, Fodder, Cotton", "reason":" "},
+      { "district": " NagarKarnool", "farmPer": 58.60, "rank":17, "majorCrops":"Red Gram, Castor, Maize, GroundNut", "reason":" "},
+      { "district": " Nalgonda", "farmPer": 58.45, "rank":18, "majorCrops":"Paddy, Cotton, GroundNuts,GreenGram, BengalGram, HorseGram,Millet,Sesame", "reason":" "},
+      { "district": " Nirmal", "farmPer": 58.32, "rank":19, "majorCrops":"Paddy, Maize, Fodder, Cotton", "reason":" "},
+      { "district": "Nizamabad ", "farmPer": 58.12, "rank":20, "majorCrops":"Paddy, Maize,Turmeric,Pulses,Soyabean, Sunflower, Onions", "reason":" "},
+      { "district": "RajannaSiricilla ", "farmPer": 58.02, "rank":21, "majorCrops":"Paddy, Cotton, Maize,Vegetables", "reason":" "}
 
+
+      ]
   }
-  ]
 
-
+]

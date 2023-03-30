@@ -5,6 +5,16 @@
   grid-template-columns: auto auto auto auto;
 }
 
+.hover-data {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  z-index: 9999;
+}
 
 
 

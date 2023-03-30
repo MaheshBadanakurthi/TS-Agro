@@ -23,11 +23,10 @@ export class InfoComponent implements OnInit {
   public soilObj!: SoilObj;
   public cropsData!: ChartData;
 
-  constructor(public http: HttpClient,private primengConfig: PrimeNGConfig) {}
+  constructor(public http: HttpClient, private primengConfig: PrimeNGConfig) {}
   ngOnInit(): void {
-
-let myObj={to:'mahesh', msg:'new Raghu', sub:"sub" }
-localStorage.setItem("mahesh",JSON.stringify(myObj))
+    let myObj = { to: 'mahesh', msg: 'new Raghu', sub: 'sub' };
+    localStorage.setItem('mahesh', JSON.stringify(myObj));
 
     this.getJSON();
     this.soil();
@@ -166,7 +165,6 @@ localStorage.setItem("mahesh",JSON.stringify(myObj))
           backgroundColor: 'orange',
         },
       ],
-
     };
     this.primengConfig.ripple = true;
   }

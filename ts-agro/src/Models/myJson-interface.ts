@@ -20,3 +20,11 @@ export interface SoilObj {
   clay: number;
   blackCotton: number;
 }
+
+export interface CropProduction {
+
+  district:string, farmPer:number, majorCrops:string,rank:number,reason:string
+
+}
+
+

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { DashboardRoutingModule } from './dashboard.routing.moule';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,9 +10,15 @@ import {TabViewModule} from 'primeng/tabview';
 import { ChartModule } from 'primeng/chart';
 import {KnobModule} from 'primeng/knob';
 import { HttpClientModule} from '@angular/common/http'
+import { DividerModule } from 'primeng/divider';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
+import { CultivateLandComponent } from './cultivate-land/cultivate-land.component';
+import { DialogModule } from 'primeng/dialog';
+import {TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
-  declarations: [InfoComponent, DashboardComponent],
+  declarations: [InfoComponent, DashboardComponent,CultivateLandComponent],
   exports: [],
   imports: [
     CommonModule,
@@ -22,7 +28,14 @@ import { HttpClientModule} from '@angular/common/http'
     TabViewModule,
     ChartModule,
     KnobModule,
-    HttpClientModule
+    HttpClientModule,
+    DividerModule,
+    ButtonModule,
+    TableModule,
+    DialogModule,
+    TooltipModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class DashboardModule {}

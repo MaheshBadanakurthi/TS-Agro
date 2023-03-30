@@ -61,7 +61,7 @@
       1948 to 1st November 1956, until it was merged with Andhra State to form Andhra Pradesh.</p>
     <div>
       <p-tabView>
-         <p-tabPanel header=" Climate ">
+        <p-tabPanel header=" Climate ">
           <p>Telangana has a
             <a href="#"> <b>semi-arid</b> </a> to arid climate with hot summers and dry winters. The state receives most
             of its rainfall during the monsoon season, which is from June to September. The average annual rainfall in
@@ -79,12 +79,12 @@
           </div>
           <div class="col-10 ms-4 mt-5 text-center">
             <b class="fs-3">Climate varies from Month to Month.</b>
-          <p-chart type="bar" [data]="climateChart" [options]="options" ></p-chart>
-          <b>Temparature on degrees</b>
+            <p-chart type="bar" [data]="climateChart" [options]="options"></p-chart>
+            <b>Temparature on degrees</b>
           </div>
 
         </p-tabPanel>
-         <p-tabPanel header=" Soil " >
+        <p-tabPanel header=" Soil ">
           <p>The soils in Telangana are predominantly <b>red sandy</b> loams, <b>red</b> loams, and <b>clay</b> loams.
             The state also has <b>black cotton soils</b> in some areas. The soils in Telangana are generally fertile,
             but there are areas where the soil is saline and alkaline.</p>
@@ -94,7 +94,7 @@
             </div>
             <div class="col-6 mt-5" *ngIf="soilObj">
               <b>Rough information about SOIL percentage.</b>
-              <p> Red Soil : <b>{{soilObj.redSoil}} %  </b> </p>
+              <p> Red Soil : <b>{{soilObj.redSoil}} % </b> </p>
               <p> Clay Soil : <b>{{soilObj.clay}} %</b> </p>
               <p> Black Cotton Soil : <b>{{soilObj.blackCotton}} %</b> </p>
               <p> Red Sandy Soil : <b>{{soilObj.redSandy}} %</b> </p>
@@ -102,13 +102,38 @@
           </div>
         </p-tabPanel>
         <p-tabPanel header=" Crops ">
-          <p> <b>Rice, cotton, maize, jowar, bajra, red gram, green gram, black gram, and groundnut</b> are the major
-            crops grown in Telangana. Other important crops include <b>sugarcane, tobacco, chillies, turmeric, and
-              mango.</b>
-          </p>
+          <p class="shadow p-3">Telangana grows <b>27</b> important crops in <b>Kharif</b> and <b>Rabi</b> seasons put
+            together covering an area of about 53.51 lakh ha. The important crops grown are Rice (14.19) lakh ha, Maize
+            (6.63) lakh ha, Pulses (6.11) lakh ha, Groundnut (1.89) lakh ha, Cotton (18.13) lakh ha, Chillies (0.83)
+            lakh ha and Sugarcane (0.41) lakh ha.</p>
+
+          <div class="card">
+            <div class="grid">
+              <div class="col-5 img-fluid ps-4">
+                <img src="https://telangana.pscnotes.com/wp-content/uploads/2017/10/telangana.jpg" alt=""
+                  class="h-100 w-100">
+
+              </div>
+              <div class="col-2">
+                <p-divider layout="vertical">
+                  <b></b>
+                </p-divider>
+              </div>
+              <div class="col-5 flex align-items-center justify-content-center">
+                <p> <b>Rice, cotton, maize, jowar, bajra, red gram, green gram, black gram, and groundnut</b> are the
+                  major
+                  crops grown in Telangana. Other important crops include <b>sugarcane, tobacco, chillies, turmeric, and
+                    mango.</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
           <div class="text-center w-75 ms-4">
             <b class="fs-3">Highest harvesting crops in TS</b>
-            <p-chart type="bar" [data]="cropsData"  > </p-chart>
+            <p-chart type="bar" [data]="cropsData"> </p-chart>
 
           </div>
         </p-tabPanel>
