@@ -64,7 +64,9 @@
 </div>
 
 <div class="text-center">
-  <b class="fs-3 text-blue-900">District list based on farming percentage.</b>
+  <div class="mt-3 mb-3">
+    <b class="fs-3 text-red-900 ">District list based on farming percentage.</b>
+  </div>
   <div class="card">
     <p-table [value]="cropProd" [tableStyle]="{'min-width':'60rem'}" [rows]="5" [paginator]="true"
       [rowsPerPageOptions]="[5,10,15,20]">
@@ -82,19 +84,50 @@
 
       <ng-template pTemplate="body" let-prod>
         <tr>
-          <td> {{prod.district}} </td>
+          <td (mouseenter)="forLatLng(prod)">
+            <!-- <div #mb class="card">
+              <div class="p-3">
+                <div class="text-wrap">
+
+                </div>
+
+              </div>
+            </div>
+
+              -->
+            <div>
+
+              <ul>
+                <li>
+
+                  <a> <b class="text-blue-500 districtDetails"> {{prod.district}} </b> </a>
+                  <ul class="card">
+                    <li ><a> <b class="fs-3">{{prod.district}}</b>
+                      </a></li>
+                    <li><a>
+                        <b> {{prod.famousFor}} </b>
+                      </a></li>
+                    <li>
+                      <b>View it on Maps</b>
+                      <a> <mgl-map [style]="'mapbox://styles/mapbox/streets-v11'" [zoom]=[zoom]
+                          [center]="[longitude, latitude]">
+                          <mgl-marker [coordinates]="[longitude, latitude]"></mgl-marker>
+                        </mgl-map> </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </td>
           <td> {{prod.rank}} </td>
           <td> {{prod.farmPer}} </td>
           <td> {{prod.majorCrops}} </td>
           <td>
-
-            <p-overlayPanel #op class="card text-wrap" >
-                <div  class="">
-                  <b class="fs-3"> {{prod.district}} </b> <br>
-                  {{prod.reason}}
-                </div>
+            <p-overlayPanel #op>
+              <b>{{prod.district}}</b>
+              <p>{{prod.reason}}</p>
             </p-overlayPanel>
-            <p-button (mouseenter)="op.show($event)" (mouseleave)="op.hide()"  label="Reason"></p-button>
+            <p-button (mouseenter)="op.show($event)" (mouseleave)="op.hide()" label="Reason"></p-button>
           </td>
 
         </tr>
@@ -104,9 +137,6 @@
 
   </div>
 </div>
-
-
-
 
 
 <div>

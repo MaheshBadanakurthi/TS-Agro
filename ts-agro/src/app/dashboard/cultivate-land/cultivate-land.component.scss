@@ -1,20 +1,48 @@
-
-
-.grids{
+.grids {
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
 
-.hover-data {
-  position: absolute;
-  top: 30px;
-  left: 0;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 5px;
-  z-index: 9999;
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: inline-block;
 }
 
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
 
+ul li {
+  display: inline-block;
+}
 
+ul li:hover {
+  background: #bcf369;
+border-radius: 1px 15px 1px 15px;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul {
+  position: absolute;
+  display: none;
+}
+
+ul li ul li {
+  width: 400px;
+  background: #e1b0b0;
+  display: block;
+}
+
+ul li ul li a {
+  display: block !important;
+}
+
+// ul li ul li:hover {background: #666;}

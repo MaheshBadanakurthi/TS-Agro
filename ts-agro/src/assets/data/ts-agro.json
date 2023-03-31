@@ -17,10 +17,10 @@
   },
   {
     "cropProduction":[
-      { "district": "Siddipeta", "farmPer": 85, "rank":1, "majorCrops":" Paddy, Cotton,Wheat", "reason":" Due to various factors. Some of these factors are:   1. Irrigation facilities 2. Fertile soil: 3. Agriculture-friendly policies: 4. Technological advancements: "},
-      { "district": "Bhadradri Kothagudem", "farmPer": 68, "rank":2, "majorCrops":"Oil Palm, Paddy, kind of Sericulture", "reason":"Reason2"},
-      { "district": "Hyderabad", "farmPer": 67, "rank":3, "majorCrops":"Rice , Maize, Pulses, Peanuts, Cotton", "reason":"Reason3"},
-      { "district": "Jagtial", "farmPer": 66, "rank":4, "majorCrops":"Paddy, Maize, Cotton, Turmeric,Groundnut,Chilli", "reason":"Reason4"},
+      { "district": "Siddipeta", "lat":18.1018, "lng":78.8520, "farmPer": 85, "rank":1, "majorCrops":" Paddy, Cotton,Wheat", "reason":" Due to various factors. Some of these factors are:   1. Irrigation facilities 2. Fertile soil: 3. Agriculture-friendly policies: 4. Technological advancements: ","famousFor":"Is renowned for its ancient religious attractions like temples, mosques and churches as well as historical monuments like Lal Kaman and Burj. The Yerra Cheruvu and Komati Cheruvu, tributaries of the Manjira River, flow through the region." },
+      { "district": "Bhadradri Kothagudem", "lat":17.7331, "lng":80.7214,  "farmPer": 68, "rank":2, "majorCrops":"Oil Palm, Paddy, kind of Sericulture", "reason":"Reason2", "famousFor":"It is said to be the place where the evil-minded king Ravana abducted Goddess Sita. This place unfolds this part of the epic Ramayana by exhibiting the primary events with beautifully canvassed sculptures of Shri Ram, Sita, Laxman, and Ravan."},
+      { "district": "Hyderabad", "lat":17.3850, "lng":78.4867,  "farmPer": 67, "rank":3, "majorCrops":"Rice , Maize, Pulses, Peanuts, Cotton", "reason":"Reason3" , "famousFor":"Hyderabad is known as The City of Pearls  , as once it was the only global centre for trade of large diamonds, emeralds and natural pearls."},
+      { "district": "Jagtial", "lat":18.7895, "lng":78.9120,  "farmPer": 66, "rank":4, "majorCrops":"Paddy, Maize, Cotton, Turmeric,Groundnut,Chilli", "reason":"Reason4", "famousFor":"Jagtial Fort also throws light on the rich history of rulers but stands out because it is the only star-shaped fort in Telangana that is fitted with canons. The Mughal dynasty used it as a Defence Fort in the 17 century."},
       { "district": "Jangon", "farmPer": 63, "rank":5, "majorCrops":"Paddy, Maize, Red gram, Green gram, vegetables", "reason":"Reason5"},
       { "district": "JayShankar Bhupalapally ", "farmPer": 62.34, "rank":6, "majorCrops":" Paddy, Cotton,Chilli, Turmeric", "reason":" "},
       { "district": "Jogulamba Gadwal ", "farmPer": 62, "rank":7, "majorCrops":"Cotton", "reason":" "},

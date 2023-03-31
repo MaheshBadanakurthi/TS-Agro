@@ -16,11 +16,11 @@ const routes: Routes = [
     path:'dashboard',
     loadChildren:()=>import ('./dashboard/dashboard.module').then(e=>e.DashboardModule)
   }
-  // ,
-  // {
-  //   path: '**',
-  //   component: LoginComponent,
-  // },
+  ,
+  {
+    path: '**',
+    component: LoginComponent,
+  },
 ];
 
 @NgModule({

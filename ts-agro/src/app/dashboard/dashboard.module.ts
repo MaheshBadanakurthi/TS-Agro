@@ -16,6 +16,7 @@ import { TableModule } from 'primeng/table';
 import { CultivateLandComponent } from './cultivate-land/cultivate-land.component';
 import { DialogModule } from 'primeng/dialog';
 import {TooltipModule } from 'primeng/tooltip';
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 
 @NgModule({
   declarations: [InfoComponent, DashboardComponent,CultivateLandComponent],
@@ -33,7 +34,10 @@ import {TooltipModule } from 'primeng/tooltip';
     ButtonModule,
     TableModule,
     DialogModule,
-    TooltipModule
+    TooltipModule,
+    NgxMapboxGLModule.withConfig({
+      accessToken: 'pk.eyJ1IjoiaGJoamhzIiwiYSI6ImNsNWo3ZGNhODBmODAzY3BqODhuejB3ZmoifQ.RqsEoPXFgDUq1mryoReotg'
+    })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
