@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit,ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CropProduction } from 'src/Models/myJson-interface';
 import * as mapboxgl from 'mapbox-gl';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-cultivate-land',
@@ -18,9 +19,10 @@ export class CultivateLandComponent implements OnInit {
   longitude: number = 78.4867;
   cropProd: CropProduction[] = [];
 
-  constructor(public http: HttpClient) {}
+  constructor(public http: HttpClient ,  public _dataService:DataService) {}
   ngOnInit(): void {
     this.getJson();
+    // this._dataService.nameMb()
     // navigator.geolocation.getCurrentPosition((loc)=>{
     //   this.latitude=loc.coords.latitude;
     //   this.longitutde = loc.coords.longitude;

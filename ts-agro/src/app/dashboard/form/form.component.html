@@ -1,0 +1,49 @@
+<div>
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="myForm">
+    <div class="pt-4 text-center">
+      <p class="fs-4">Reactive Form Using JSON file</p>
+    </div>
+    <div class=" d-flex justify-content-center flex-wrap pt-4">
+      <div *ngFor="let control of JSONData">
+        <label class="fs-5">{{control.controlName}} : </label>
+
+        <div class="me-2 ms-2" *ngIf="control.type === 'text' || control.type === 'email' || control.type ==='number'">
+          <input [formControlName]="control.controlName" class="form-control w-100 p-2 pe-2"
+            placeholder="{{control.placeholder}}">
+          <div class="text-danger"
+            *ngIf="taskForm.get(control.controlName)?.touched && taskForm.get(control.controlName)?.invalid">
+            <p> {{control.Validations?.requiredMessage}} </p>
+          </div>
+        </div>
+
+        <div class="ms-1" *ngIf="control.type === 'select'">
+          <p-multiSelect formControlName="{{control.controlName}}" [options]="country" optionLabel="name"
+            placeholder="Select City here"></p-multiSelect>
+          <p class="text-danger"
+            *ngIf="taskForm.get(control.controlName)?.touched && taskForm.get(control.controlName)?.invalid">
+            {{control.Validations?.requiredMessage}} </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="d-flex justify-content-center p-4">
+      <button type="submit" class="btn btn-success" [disabled]="taskForm.invalid">Submit</button>
+    </div>
+  </form>
+
+</div>
+
+
+
+<!-- <div class="contentAlign1 ms-2">
+  <div>
+    <b class="fs-1 ms-3">LMS</b>
+  </div>
+  <div class="contentAlign2">
+    <p>
+      <b class="fs-2">Tax Invoice</b> <br>
+      invoice #: 4835253dfbdf68532b <br>
+
+    </p>
+  </div>
+</div> -->

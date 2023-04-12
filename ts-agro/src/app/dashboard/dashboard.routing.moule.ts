@@ -3,6 +3,8 @@ import { Routes ,RouterModule} from '@angular/router'
 import { CultivateLandComponent } from './cultivate-land/cultivate-land.component'
 import { DashboardComponent } from './dashboard.component'
 import { InfoComponent } from './info/info.component'
+import { RxjsComponent } from './rxjs/rxjs.component'
+import { FormComponent } from './form/form.component'
 
 const routes:Routes=[
   {
@@ -13,6 +15,12 @@ const routes:Routes=[
       },
       {
         path:'cultivateLand', component:CultivateLandComponent
+      },
+      {
+        path:'rxjs', component:RxjsComponent
+      },
+      {
+        path:'formTask', component:FormComponent
       }
     ]
   }

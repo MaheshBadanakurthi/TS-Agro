@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartModule } from 'primeng/chart';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

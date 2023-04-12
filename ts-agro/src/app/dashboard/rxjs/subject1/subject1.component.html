@@ -1,0 +1,25 @@
+
+<div class="card border-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Subject Component 01</div>
+  <div class="card-body">
+    <div class="card-header m-3">Here value is  <b class="fs-4 text-primary">{{SubName}}</b></div>
+
+    <input type="text" class="w-75 form-control m-3 " placeholder="Write Here" #IPValue >
+
+    <button class="btn btn-success" (click)="ChangeName(IPValue)" >Change Value</button>
+  </div>
+</div>
+<hr>
+<div class="text-center">
+  <b class="fs-4">BehaviourSubject example</b>
+</div>
+<div class="card border-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Subject Component 01  for BehaviourSubject</div>
+  <div class="card-body">
+    <div class="card-header m-3">Here BehaviourSubject is  <b class="fs-4 text-primary">{{behaviourSubValue}}</b></div>
+
+    <input type="text" class="w-75 form-control m-3 " placeholder="Write Here" #IpValue >
+
+    <button class="btn btn-success" (click)="ChangeNameForBehaviour(IpValue)" >Change Value</button>
+  </div>
+</div>

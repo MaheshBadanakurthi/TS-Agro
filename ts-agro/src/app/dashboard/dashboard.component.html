@@ -25,10 +25,14 @@
                 <span class="ms-2">Aggricultural Land</span>
               </li>
               <li class="listbox-item" routerLink="/dashboard/benz">
-                <i class="pi pi-angle-double-right me-2" style="font-size: 20px;color: rgb(8, 0, 255);"></i> <span class="ms-2"> Non Agro Land</span>
+                <i class="pi pi-angle-double-right me-2" style="font-size: 20px;color: rgb(8, 0, 255);"></i> <span
+                  class="ms-2"> Non Agro Land</span>
               </li>
-              <li class="listbox-item" routerLink="/dashboard/bugatti">
-                <i class="pi pi-angle-double-right  me-2" style="font-size: 20px"></i> <span class="ms-2"> Forest</span>
+              <li class="listbox-item" routerLink="/dashboard/formTask">
+                <i class="pi pi-angle-double-right  me-2" style="font-size: 20px"></i> <span class="ms-2"> Form</span>
+              </li>
+              <li class="listbox-item" routerLink="/dashboard/rxjs">
+                <i class="pi pi-angle-double-right  me-2" style="font-size: 20px"></i> <span class="ms-2"> RXJS</span>
               </li>
 
 
@@ -40,17 +44,19 @@
       </div>
       <div class="content-inner overflow-hidden px-1">
         <div class="row">
-        <div class="header float-left">
+          <div class="header float-left">
 
             <div class="col-lg-6 col-md-6 p-3">
               <div class="d-flex  ps-3" style="width: 100%;">
-                  <button type="button" class="menu-button" (click)="visibleSidebar = true"> <i
-                      class="pi pi-bars"></i></button>
-                  <input type="text" class="form-control w-50" placeholder=" Search here">
-
+                <button type="button" class="menu-button" (click)="visibleSidebar = true"> <i
+                    class="pi pi-bars"></i></button>
+                <input type="text" class="form-control w-50" placeholder=" Search here">
+                <div class="ms-5 mt-2">
+                  <b class="fs-5 shadow" *ngIf="mbShow">#mB</b>
+                </div>
                 <div class="profile">
                   <i class="pi pi-user cursor-pointer" style="font-size: 1.5rem" (click)="profile.toggle($event)"></i>
-                   <p-overlayPanel #profile [style]="{width:'100px', height:'auto'}">
+                  <p-overlayPanel #profile [style]="{width:'100px', height:'auto'}">
                     <ng-template pTemplate>
                       <a><b>Profile</b></a> <br>
                       <b class="text-primary cursor-pointer" (click)="logout()">Logout</b>
@@ -63,7 +69,7 @@
           </div>
         </div>
         <div class="content">
-
+          <app-header></app-header>
           <router-outlet></router-outlet>
 
         </div>

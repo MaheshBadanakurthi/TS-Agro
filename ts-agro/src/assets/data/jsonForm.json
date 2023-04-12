@@ -1,0 +1,44 @@
+[
+  {
+    "type": "text",
+    "controlName": "FirstName",
+    "Validations": false,
+    "placeholder": "Enter firstname here"
+  },
+  {
+    "type": "email",
+    "controlName": "Email",
+    "placeholder": "Enter Email here",
+    "Validations": {
+      "required": true,
+      "requiredMessage": "Email field is required",
+      "minLength": 4
+    }
+  },
+  {
+    "type": "select",
+    "controlName": "Country",
+    "placeholder": "Select Country",
+    "Validations": {
+      "required": true,
+      "requiredMessage": "Country field is required"
+    },
+    "dropdown": [
+      { "name": "India", "code": "in" },
+      { "name": "China", "code": "cn" },
+      { "name": "USA", "code": "us" }
+    ]
+  },
+  {
+    "type": "number",
+    "controlName": "Mobile no",
+    "placeholder": "Enter mobile number",
+    "Validations": {
+      "required": true,
+      "requiredMessage": "Enter MOobile number",
+      "minLength": 10,
+      "maxLength": 10
+    }
+  }
+
+]

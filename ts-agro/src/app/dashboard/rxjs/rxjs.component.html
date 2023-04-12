@@ -1,0 +1,66 @@
+<div class="card shadow p-4">
+  <h2> <b class="text-success shadow ">RXJS</b> practise</h2>
+  <div>
+    <div>
+      <p> ==> Name from nameList Array <b> {{namesArrData}}</b> </p>
+      <p> ==> Name from nameList Of <b> {{namesOfData}}</b> </p>
+      <p> ==> Distinct names in names array using PIPE transform <b>{{distinctNames}}</b> </p>
+      <p>==> Number array <b>{{numArr}}</b> </p>
+
+      <p> Buffer data <b>{{bufferData}}</b> </p>
+      <div>
+        <button class="btn btn-primary" (click)="subjects()">Subjects</button>
+      </div>
+
+    </div>
+  </div>
+  <div class=" row">
+    <div class="text-center">
+      <b class="fs-4">Subjects Concept implemented</b>
+      <p>If u changeValue in any component It will effects in the all components.</p>
+      <hr>
+      <p>In BehaviourSubject We place Default value in Service only, Not in every component we used </p>
+
+    </div>
+    <hr>
+    <b class="ms-5 ">Here values is <b class="fs-4 text-primary">{{SubName}}</b> </b>
+    <div class="d-flex">
+      <div class="col-4">
+        <app-subject1></app-subject1>
+      </div>
+      <div class="col-4">
+        <app-subject2></app-subject2>
+      </div>
+      <div class="col-4">
+        <app-subject3></app-subject3>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- <div class="card">
+  <div class="m-5">
+    <b class="fs-5 p-3">Conditional Validators in reactive forms</b>
+  </div>
+  <form [formGroup]="taskForm" (ngSubmit)="submitForm()" class="ms-5">
+    <label for="level" class="p-3"> Label</label>
+    <p-dropdown formControlName="levels" [options]="options" optionLabel="option" placeholder="Select Level"
+      (onChange)="dropdownValue($event)"></p-dropdown>
+      <div class="text-danger" *ngIf="taskForm.get('levels')?.touched && taskForm.get('levels')?.invalid " >
+        <b>Please select level</b>
+      </div>
+    <div *ngIf="stateValue">
+      <label for="state" class="p-3">State</label>
+      <input type="text" class="formControl w-50" formControlName="states" placeholder="Write something here">
+      <div class="text-danger" *ngIf="taskForm.get('states')?.touched && taskForm.get('states')?.invalid " >
+        <b>This field can not be empty</b>
+      </div>
+    </div>
+    <div class="ms-5 p-2">
+      <button type="submit" class="btn btn-success" [disabled]="taskForm.invalid" >Submit</button>
+    </div>
+  </form>
+
+</div> -->
